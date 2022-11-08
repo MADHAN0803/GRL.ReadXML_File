@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VIF xmlns="http://usb.org/VendorInfoFile.xsd">
+  <VIF_Specification>3.00</VIF_Specification>
+  <VIF_App>
+    <Vendor>USB-IF</Vendor>
+    <Name>Vendor Info File Editor</Name>
+    <Version>3.0.0.0</Version>
+  </VIF_App>
+  <Vendor_Name>CN09</Vendor_Name>
+  <Model_Part_Number>Sample</Model_Part_Number>
+  <Product_Revision>2</Product_Revision>
+  <TID>0</TID>
+  <VIF_Product_Type value="0">Port Product</VIF_Product_Type>
+  <Certification_Type value="0">End Product</Certification_Type>
+  <Product>
+    <Product_VID value="4660">1234</Product_VID>
+    <USB4_Num_Internal_Host_Controllers value="1" />
+    <USB4_Num_PCIe_DN_Bridges value="0" />
+    <USB4RouterList>
+      <Usb4Router>
+        <USB4_Router_ID value="0" />
+        <USB4_Silicon_VID value="4660">1234</USB4_Silicon_VID>
+        <USB4_Num_Lane_Adapters value="2" />
+        <USB4_Num_USB3_DN_Adapters value="1" />
+        <USB4_Num_DP_IN_Adapters value="1" />
+        <USB4_Num_DP_OUT_Adapters value="1" />
+        <USB4_Num_PCIe_DN_Adapters value="0" />
+        <USB4_TBT3_Not_Supported value="1">Not TBT3-Compatible</USB4_TBT3_Not_Supported>
+        <USB4_PCIe_Wake_Supported value="false" />
+        <USB4_USB3_Wake_Supported value="false" />
+        <USB4_Num_Unused_Adapters value="0" />
+      </Usb4Router>
+      <Usb4Router>
+        <USB4_Router_ID value="1" />
+        <USB4_Silicon_VID value="4660">1234</USB4_Silicon_VID>
+        <USB4_Num_Lane_Adapters value="3" />
+        <USB4_Num_USB3_DN_Adapters value="1" />
+        <USB4_Num_DP_IN_Adapters value="0" />
+        <USB4_Num_DP_OUT_Adapters value="0" />
+        <USB4_Num_PCIe_DN_Adapters value="0" />
+        <USB4_TBT3_Not_Supported value="1">Not TBT3-Compatible</USB4_TBT3_Not_Supported>
+        <USB4_PCIe_Wake_Supported value="false" />
+        <USB4_USB3_Wake_Supported value="false" />
+        <USB4_Num_Unused_Adapters value="0" />
+      </Usb4Router>
+    </USB4RouterList>
+  </Product>
+  <Component>
+    <Port_Label>1</Port_Label>
+    <Connector_Type value="2">Type-C®</Connector_Type>
+    <USB4_Supported value="true" />
+    <USB4_Router_Index value="2" />
+    <USB_PD_Support value="true" />
+    <PD_Port_Type value="0">Consumer Only</PD_Port_Type>
+    <FR_Swap_Reqd_Type_C_Current_As_Initial_Source value="0">FR_Swap not supported</FR_Swap_Reqd_Type_C_Current_As_Initial_Source>
+    <Num_Snk_PDOs value="1" />
+    <SnkPdoList>
+      <SnkPDO>
+        <Snk_PDO_Supply_Type value="0">Fixed</Snk_PDO_Supply_Type>
+        <Snk_PDO_Voltage value="100">5000 mV</Snk_PDO_Voltage>
+        <Snk_PDO_Op_Current value="200">2000 mA</Snk_PDO_Op_Current>
+      </SnkPDO>
+    </SnkPdoList>
+    <XID_SOP value="123" />
+    <Data_Capable_As_USB_Host_SOP value="true" />
+    <Num_SVIDs_Max_SOP value="1" />
+    <SOPSVIDList>
+      <SOPSVID>
+        <SVID_SOP value="65281">FF01</SVID_SOP>
+        <SVID_Modes_Fixed_SOP value="true" />
+        <SVID_Num_Modes_Min_SOP value="1" />
+        <SVID_Num_Modes_Max_SOP value="1" />
+        <SOPSVIDModeList>
+          <SOPSVIDMode>
+            <SVID_Mode_Enter_SOP value="true" />
+          </SOPSVIDMode>
+        </SOPSVIDModeList>
+      </SOPSVID>
+    </SOPSVIDList>
+    <AMA_HW_Vers value="0">0</AMA_HW_Vers>
+    <AMA_FW_Vers value="0">0</AMA_FW_Vers>
+    <AMA_VCONN_Reqd value="true" />
+    <AMA_VCONN_Power value="1">1.5W</AMA_VCONN_Power>
+    <AMA_VBUS_Reqd value="true" />
+    <AMA_Superspeed_Support value="1">USB 3.2 Gen 1</AMA_Superspeed_Support>
+  </Component>
+</VIF>
